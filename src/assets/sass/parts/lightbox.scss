@@ -1,0 +1,117 @@
+@import "../variables/colors";
+
+.images-lightbox {
+  a {
+    width: 100%;
+    height: fit-content;
+  }
+  .images-wrapper {
+    display: flex;
+  }
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    background-color: rgba($white, 0.9);
+    z-index: 100;
+    .lightbox__close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      &:before {
+        content: '\2573';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 5px 0;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .lightbox__btn {
+      position: fixed;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -40px;
+      font-size: 1.8em;
+      font-weight: 100;
+      padding: 0.2em  0.5em;
+      color: $white;
+      background-color: rgba($gray7, 0.8);
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba($gray5, 0.8);
+      }
+    }
+    .lightbox__prev {
+      left: 20px;
+      &:before {
+        content: '\02C2';
+        left: 0;
+        right: auto;
+      }
+    }
+    .lightbox__next {
+      right: 20px;
+      &:before {
+        content: '\02C3';
+        right: 0;
+        left: auto;
+      }
+    }
+    /* Lighboxt common transition */
+    .lightbox-prev-enter-active,
+    .lightbox-prev-leave-active,
+    .lightbox-next-enter-active,
+    .lightbox-next-leave-active {
+      transition-delay: 0.3s;
+      transition: transform 0.5s, opacity 0.5s;
+    }
+    /* Lighboxt prev transition */
+    .lightbox-prev-enter {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    .lightbox-prev-leave-active {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    /* Lighboxt next transition */
+    .lightbox-next-enter {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    .lightbox-next-leave-active {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    /* Lighboxt image apparition */
+    .lightbox-image-fade-enter-active,
+    .lightbox-image-fade-leave-active {
+      transition: opacity 0.3s;
+    }
+    .lightbox-image-fade-enter,
+    .lightbox-image-fade-leave-active {
+      opacity: 0;
+    }
+    .lightbox__image {
+      position: fixed;
+    }
+  }
+}
