@@ -25,7 +25,9 @@
         <div class="navbar-start">
           <router-link :to="{name: 'home'}" class="navbar-item">Accueil</router-link>
 
-          <router-link to="/todo" class="navbar-item">Todo</router-link>
+          <router-link :to="{name: 'quizz'}" class="navbar-item">Quizz</router-link>
+
+          <router-link :to="{name: 'todo'}" class="navbar-item">Todo</router-link>
 
           <router-link :to="{name: 'users'}" class="navbar-item">Utilisateurs</router-link>
 

@@ -2,7 +2,7 @@
   <div class="todoapp">
     <header class="header">
       <h1>Todos</h1>
-      <input id="todoName" class="new-todo" type="text" placeholder="Ajouter une tâche" v-model="newTodoName" @keyup.enter="addTodo">
+      <input id="todoName" class="new-todo" type="text" placeholder="Ajouter une tâche" v-model="newTodoName" @keyup.enter="addTodo(newTodoName)">
     </header>
     <section class="main">
       <input id="toggle-all" class="toggle-all" type="checkbox" v-model="allDone"><label for="toggle-all">Marqué comme complété</label>
@@ -18,13 +18,13 @@
       </ul>
     </section>
     <footer class="footer" v-show="hasTodo">
-      <span class="todo-count"><b>{{ remaining }}&nbsp;</b>Tâches à faire</span>
+      <span class="todo-count"><b>{{ remainingTodosCount }}&nbsp;</b>Tâches à faire</span>
       <ul class="filters">
         <li> <a href="#" :class="{selected: filter === 'all'}" @click.prevent="filter = 'all'">Toutes</a></li>
         <li> <a href="#" :class="{selected: filter === 'todo'}" @click.prevent="filter = 'todo'">À&nbsp;faire</a></li>
         <li> <a href="#" :class="{selected: filter === 'done'}" @click.prevent="filter = 'done'">Faites</a></li>
       </ul>
-      <button class="clear-completed" v-show="completed" @click.prevent="deleteCompleted">Supprimer finie(s)</button>
+      <button class="clear-completed" v-show="completedTodosCount" @click.prevent="deleteCompleted">Supprimer finie(s)</button>
     </footer>
   </div>
 </template>
@@ -32,6 +32,7 @@
 <script>
 
 import Vue from 'vue'
+import { mapState, mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'Todo',
@@ -40,11 +41,10 @@ export default {
   },
   data () {
     return {
-      todos: this.value,
       newTodoName: '',
       filter: 'all',
       editing: null,
-      oldTodo: ''
+      odlTodo: state => state.todos.name
     }
   },
   watch: {
@@ -53,6 +53,16 @@ export default {
     }
   },
   computed: {
+    ...mapState({
+      todos: 'todos'
+    }),
+    ...mapGetters([
+      'todos',
+      'completedTodos',
+      'remainingTodos',
+      'remainingTodosCount',
+      'completedTodosCount']
+    ),
     allDone: {
       set (value) {
         this.todos.forEach(todo => {
@@ -66,43 +76,37 @@ export default {
     hasTodo () {
       return this.todos.length > 0
     },
-    remaining () {
-      return this.todos.filter(todo => !todo.completed).length
-    },
-
-    completed () {
-      return this.todos.filter(todo => todo.completed).length
-    },
     filteredTodos () {
       if (this.filter === 'todo') {
-        return this.todos.filter(todo => !todo.completed)
+        return this.remainingTodos
       } else if (this.filter === 'done') {
-        return this.todos.filter(todo => todo.completed)
+        return this.completedTodos
       }
       return this.todos
     }
   },
   methods: {
+    ...mapActions({
+      addTodoStore: 'addTodo',
+      editTodoStore: 'editTodo',
+      deleteTodo: 'deleteTodo'
+    }),
     addTodo () {
-      this.todos.push({ name: this.newTodoName, completed: false })
+      this.addTodoStore(this.newTodoName)
       this.newTodoName = ''
     },
     editTodo (todo) {
       this.editing = todo
-      this.oldTodo = todo.name
+      this.editTodoStore(todo, this.odlTodo)
     },
-    editCompleted () {
+    editCompleted () { // TODO fix this feature
       this.editing = null
     },
-    editCanceled () {
+    editCanceled () { // TODO fix this feature
       this.editing.name = this.oldTodo
       this.editCompleted()
     },
-    deleteTodo (todo) {
-      this.todos = this.todos.filter(i => i !== todo)
-      this.$emit('input', this.todos)
-    },
-    deleteCompleted () {
+    deleteCompleted () { // TODO fix this feature
       this.todos = this.todos.filter(todo => !todo.completed)
       this.$emit('input', this.todos)
     }

@@ -2,44 +2,31 @@
     <aside class="column is-one-fifth">
       <nav class="panel">
         <p class="panel-heading">
-          Lorem
+          Les avis Google
         </p>
         <div class="panel-block">
-          <p class="control has-icons-left">
-            <input class="input" type="text" placeholder="Search">
-          </p>
-        </div>
-        <a class="panel-block is-active">
-          bulma
-        </a>
-        <a class="panel-block">
-          marksheet
-        </a>
-        <a class="panel-block">
-          minireset.css
-        </a>
-        <a class="panel-block">
-          jgthms.github.io
-        </a>
-        <a class="panel-block">
-          daniellowtw/infboard
-        </a>
-        <a class="panel-block">
-          mojs
-        </a>
-        <label class="panel-block">
-          <input type="checkbox">
-          remember me
-        </label>
-        <div class="panel-block">
-          <button class="button is-link is-outlined is-fullwidth">
-            Reset all filters
-          </button>
+          <div class="control reviews">
+            <reviews title="Titre de test" :note="4.9" :total-reviews="123">
+              <review :stars="4" autor="John doe1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis distinctio ducimus earum eos, error est fugit in, incidunt ipsum itaque mollitia natus nesciunt possimus qui recusandae rem unde!</review>
+              <review :stars="3" autor="John doe2">Consectetur adipisicing elit. Accusamus accusantium animi asperiores aut beatae eos, error minima nam non omnis perferendis possimus qui rem. Consequuntur distinctio dolor fugiat praesentium tempore.</review>
+              <review :stars="5" autor="John doe3">Cumque cupiditate debitis deserunt ducimus eveniet excepturi labore laudantium, maiores nobis non nostrum quas repudiandae, sint sunt voluptate voluptatibus?</review>
+              <review :stars="5" autor="John doe4">Deserunt eum facilis ipsa labore veritatis. Delectus excepturi fugit ipsum nihil, officia possimus soluta. Facilis, maiores totam</review>
+            </reviews>
+          </div>
         </div>
       </nav>
     </aside>
 </template>
 
 <script>
-export default {}
+import Reviews from '../../components/reviews/Reviews'
+import Review from '../../components/reviews/Review'
+
+export default {
+  name: 'Sidebar',
+  components: {
+    Reviews,
+    Review
+  }
+}
 </script>
