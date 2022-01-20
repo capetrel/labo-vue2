@@ -17,3 +17,4 @@ Avec Bulma Css et Animate css
 ## TODO
 - [ ] Styliser les reviews
 - [ ] Carroussel de reviews
+- [ ] Terminer le store pour Todo
