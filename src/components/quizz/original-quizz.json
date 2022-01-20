@@ -1,0 +1,374 @@
+{
+  "fournisseur": "OpenQuizzDB - Fournisseur de contenu libre (https://www.openquizzdb.org)",
+  "rédacteur": "Catherine De Smeytere",
+  "thème": "Fiction pour tous (De la littérature au cinéma)",
+  "difficulté": "2 / 5",
+  "quizz": {
+    "débutant": [
+      {
+        "id": 1,
+        "question": "Quel acteur interprète le héros du film « Independance Day », sorti en 1996 ?",
+        "propositions": [
+          "Jeff Goldblum",
+          "Bruce Willis",
+          "Tom Cruise",
+          "Will Smith"
+        ],
+        "réponse": "Will Smith",
+        "anecdote": "« Independance Day » est ressorti en 2010 en version longue (édition spéciale) avec huit minutes de scènes supplémentaires."
+      },
+      {
+        "id": 2,
+        "question": "Qui a imaginé le scénario de la saga « Star Wars » dans les années 1970 ?",
+        "propositions": [
+          "Quentin Tarantino",
+          "James Cameron",
+          "Georges Lucas",
+          "J.J. Abrams"
+        ],
+        "réponse": "Georges Lucas",
+        "anecdote": "George Lucas est également le créateur et scénariste de la saga « Indiana Jones », réalisée par son ami Steven Spielberg."
+      },
+      {
+        "id": 3,
+        "question": "Comment pourriez-vous traduire en français le I de « A.I. » ?",
+        "propositions": [
+          "Inaccessible",
+          "Impossible",
+          "Iréel",
+          "Intelligence"
+        ],
+        "réponse": "Intelligence",
+        "anecdote": "« A.I. Intelligence artificielle » est un film de science-fiction écrit et réalisé par Steven Spielberg, sur une idée de Stanley Kubrick."
+      },
+      {
+        "id": 4,
+        "question": "Sur quelle planète de notre Système solaire se déroule l'action du film « John Carter » ?",
+        "propositions": [
+          "Pluton",
+          "Jupiter",
+          "Saturne",
+          "Mars"
+        ],
+        "réponse": "Mars",
+        "anecdote": "Il s'agit d'une libre adaptation du roman « Une princesse de Mars » de l'auteur américain Edgar Rice Burroughs, paru en 1917."
+      },
+      {
+        "id": 5,
+        "question": "Quel acteur interprète un homme bicentenaire dans un film de 1999 ?",
+        "propositions": [
+          "Sam Neil",
+          "Robin Williams",
+          "Guy Pearce ",
+          "Kevin Spacey"
+        ],
+        "réponse": "Robin Williams",
+        "anecdote": "L'intrigue du film explore les questions d'humanité, esclavage, liberté intellectuelle, conformité, sexe, amour et de mortalité."
+      },
+      {
+        "id": 6,
+        "question": "Qui a racheté la société de production Lucasfilm fondée par George Lucas ?",
+        "propositions": [
+          "Pixar",
+          "Disney",
+          "Films du plat pays",
+          "Plan B"
+        ],
+        "réponse": "Disney",
+        "anecdote": "Pixar Animation Studios, créée en 1979 par George Lucas, fut vendue à Steve Jobs, devenant ainsi une filiale de Disney en 2006."
+      },
+      {
+        "id": 7,
+        "question": "Qui est Leeloominaï Lekatariba Laminatchaï Ekbat De Sebat ?",
+        "propositions": [
+          "Chanteuses lyrique",
+          "Grande prêtresse",
+          "Cinquième élément",
+          "Serveuse asiatique"
+        ],
+        "réponse": "Cinquième élément",
+        "anecdote": "Pour le rôle de Leeloo, 8 000 actrices se présentèrent aux auditions, Luc Besson n'en ayant rencontré personnellement que 300."
+      },
+      {
+        "id": 8,
+        "question": "Quel acteur talentueux et sexy s'est retrouvé « Seul sur Mars » ?",
+        "propositions": [
+          "Clive Owen",
+          "Matt Damon",
+          "Bruce Willis",
+          "Will Smith"
+        ],
+        "réponse": "Matt Damon",
+        "anecdote": "Adepte du concept, Matt Damon a accepté d'interpréter le personnage de Mark Watney deux jours après avoir reçu le scénario."
+      },
+      {
+        "id": 9,
+        "question": "Que surveillent les membres de l'organisation ultra-secrète Men in Black ?",
+        "propositions": [
+          "Animaux",
+          "Ouragans",
+          "Présidents",
+          "Extraterrestres"
+        ],
+        "réponse": "Extraterrestres",
+        "anecdote": "Grâce à leurs technologies avancées, ils sont virtuellement inexistants, effaçant la mémoire des témoins gênants."
+      },
+      {
+        "id": 10,
+        "question": "Qui utilise le côté lumineux de la Force dans la saga « Star Wars » ?",
+        "propositions": [
+          "Clones",
+          "Siths",
+          "Robots",
+          "Chevaliers Jedi"
+        ],
+        "réponse": "Chevaliers Jedi",
+        "anecdote": "La Force semble être une sorte d'énergie omniprésente et mystérieuse dont personne n'est encore arrivé à percer l'origine."
+      }
+    ],
+    "confirmé": [
+      {
+        "id": 11,
+        "question": "Dans quelle série a-t-on découvert Olivia Cooke, présente dans le film « The Signal » ?",
+        "propositions": [
+          "Game of Thrones",
+          "Westworld",
+          "Bates Motel",
+          "Vampire Diaries"
+        ],
+        "réponse": "Bates Motel",
+        "anecdote": "En 2018, elle tourne son premier blockbuster pour « Ready Player One », long métrage de science-fiction réalisé par Steven Spielberg."
+      },
+      {
+        "id": 12,
+        "question": "Qui a reçu plusieurs prix pour les costumes du film « Le Cinquième Élément » ?",
+        "propositions": [
+          "Pierre Cardin",
+          "Coco Chanel",
+          "John Galiano",
+          "Jean-Paul Gaultier"
+        ],
+        "réponse": "Jean-Paul Gaultier",
+        "anecdote": "L'enfant terrible de la mode est mondialement considéré comme un symbole de la culture française et est devenu une icône."
+      },
+      {
+        "id": 13,
+        "question": "Quel acteur incarne l'agent d'assurance Jacq Vaucan dans le film « Automata » ?",
+        "propositions": [
+          "Sam Worthington",
+          "Ethan Hawke",
+          "Antonio Banderas",
+          "Will Smith"
+        ],
+        "réponse": "Antonio Banderas",
+        "anecdote": "La société de robotique ROC construit le Pilgrim 7000, un robot humanoïde possédant un biokernel à intelligence quantique."
+      },
+      {
+        "id": 14,
+        "question": "Qui remplace les hommes sur les rings de boxe du film « Real Steel » ?",
+        "propositions": [
+          "Jouets",
+          "Hologrammes",
+          "Animaux",
+          "Robots"
+        ],
+        "réponse": "Robots",
+        "anecdote": "« Real Steel » comprend plusieurs références au film « Rocky », le robot semblant n'avoir aucune chance contre le champion."
+      },
+      {
+        "id": 15,
+        "question": "Qu'est-ce que le transperceneige dans un film de science-fiction sud-coréen ?",
+        "propositions": [
+          "Plante",
+          "Vaisseau spatial",
+          "Train",
+          "Plate-forme"
+        ],
+        "réponse": "Train",
+        "anecdote": "En France, à l'occasion de l'adaptation au cinéma, Casterman réunit les trois albums originaux en intégrale sous le titre « Transperceneige »."
+      },
+      {
+        "id": 16,
+        "question": "Dans quel monument ont débarqué les Mondo-Shawans en 1914 ?",
+        "propositions": [
+          "Nécropole aztèque",
+          "Temple romain",
+          "Temple Inca",
+          "Pyramide d'Égypte"
+        ],
+        "réponse": "Pyramide d'Égypte",
+        "anecdote": "Leur mission : récupérer 4 pierres représentant les 4 éléments de la vie suite à l'arrivée imminente de la Première Guerre mondiale."
+      },
+      {
+        "id": 17,
+        "question": "Quelle est la nationalité de Pierre Boulle, auteur du roman « La Planète des singes » ?",
+        "propositions": [
+          "Canadienne",
+          "Française",
+          "Suisse",
+          "Belge"
+        ],
+        "réponse": "Française",
+        "anecdote": "Cinq ans après la mort de Pierre Boulle, sa nièce et son mari ont découvert de nouveaux manuscrits inédits dans des archives."
+      },
+      {
+        "id": 18,
+        "question": "Sur quelle chaîne francophone « Star Trek » fut-il diffusé en multilingue en 2001 ?",
+        "propositions": [
+          "Télé Monté-Carlo",
+          "Télé-Luxembourg",
+          "La Cinq",
+          "Canal Jimmy"
+        ],
+        "réponse": "Canal Jimmy",
+        "anecdote": "Le 1er octobre 2001, Canal Jimmy sera rebaptisée Jimmy et recentrera encore plus sa programmation sur les séries télévisées."
+      },
+      {
+        "id": 19,
+        "question": "De quel handicap souffre le marine Jake Sully dans le film « Avatar » ?",
+        "propositions": [
+          "Surdité",
+          "Amputation",
+          "Paraplégie",
+          "Cécité"
+        ],
+        "réponse": "Paraplégie",
+        "anecdote": "Jake Sully, personnage central de l'histoire, va devoir, via son avatar, choisir son camp avec pour enjeu le destin de la planète."
+      },
+      {
+        "id": 20,
+        "question": "Qui a composé la musique du film « Le Cinquième Élément » ?",
+        "propositions": [
+          "Eric Serra",
+          "Marco Beltrami",
+          "Hans Zimmer",
+          "John Williams"
+        ],
+        "réponse": "Eric Serra",
+        "anecdote": "C'est la cantatrice Inva Mula qui interprète l'extrait de « Lucia di Lammermoor » de Gaetano Donizetti, « Il dolce suono » et la « Diva Dance »."
+      }
+    ],
+    "expert": [
+      {
+        "id": 21,
+        "question": "Quel film de 2005 traite du clonage d'êtres humains dans un but médical ?",
+        "propositions": [
+          "The Island",
+          "Clones",
+          "Repo Men",
+          "Westworld"
+        ],
+        "réponse": "The Island",
+        "anecdote": "Les héros découvrent que les choix de la Loterie ne seraient pas dus au hasard car l'Île cache une terrifiante vérité."
+      },
+      {
+        "id": 22,
+        "question": "Que gère L'Union dans le film américano-canadien « Repo Men » ?",
+        "propositions": [
+          "Vaisseaux spatiaux",
+          "Clones",
+          "Don d'organes",
+          "Robots"
+        ],
+        "réponse": "Don d'organes",
+        "anecdote": "Les personnes ne s'acquittant pas de leurs lourdes dettes après une greffe d'organes sont confrontées aux repo men, les repreneurs."
+      },
+      {
+        "id": 23,
+        "question": "Quel mouvement prône la technologie pour améliorer la condition humaine ?",
+        "propositions": [
+          "Transgénétique",
+          "Transhumanisme",
+          "Probiotique",
+          "Technogénétique"
+        ],
+        "réponse": "Transhumanisme",
+        "anecdote": "Les transhumanistes considèrent le handicap, la souffrance, la maladie, le vieillissement ou la mort comme inutiles."
+      },
+      {
+        "id": 24,
+        "question": "En 2019, qui domine la planète Terre dans le film « Daybreakers » ?",
+        "propositions": [
+          "Vampires",
+          "Extraterrestres",
+          "Loups garous",
+          "Démons"
+        ],
+        "réponse": "Vampires",
+        "anecdote": "Bien qu'aucun lien ne soit avéré, le scénario de « Daybreakers » fait penser au roman « A l'assaut de l'invisible » d'A. E. van Vogt."
+      },
+      {
+        "id": 25,
+        "question": "Que tente-t-on de transférer dans le film « Renaissances » avec Ben Kingsley ?",
+        "propositions": [
+          "Conscience",
+          "Sang contaminé",
+          "Intelligence",
+          "Organes"
+        ],
+        "réponse": "Conscience",
+        "anecdote": "Le postulat de départ du film est très proche du film « L'Opération diabolique », réalisé par John Frankenheimer, sorti en 1966."
+      },
+      {
+        "id": 26,
+        "question": "Dans le film « Splice » de Vincenzo Natali, comment Dren est-elle créée ?",
+        "propositions": [
+          "Anciens virus",
+          "Combinaison ADN",
+          "ADN fossilisé",
+          "Hybrides aliens"
+        ],
+        "réponse": "Combinaison ADN",
+        "anecdote": "C'est l'actrice Delphine Chanéac qui incarne Dren, aux côtés de l'acteur américain Adrien Brody et de la canadienne Sarah Polley."
+      },
+      {
+        "id": 27,
+        "question": "Au Québec, la série « Star Trek » est connue sous le nom de quelle patrouille ?",
+        "propositions": [
+          "De l'espace",
+          "De l'univers",
+          "Du cosmos",
+          "De la galaxie"
+        ],
+        "réponse": "Du cosmos",
+        "anecdote": "« Star Trek » est un univers créé en 1966 par Gene Roddenberry regroupant sept séries télévisées en 731 épisodes."
+      },
+      {
+        "id": 28,
+        "question": "Dans quel film Johnny Depp transfère-t-il une conscience vers un ordinateur ?",
+        "propositions": [
+          "Renaissance",
+          "Aeon Flux",
+          "Transcendance",
+          "The Island"
+        ],
+        "réponse": "Transcendance",
+        "anecdote": "« Transcendance » est à l'origine un scénario de Jack Paglen qu'il a développé en discutant longuement avec sa femme informaticienne."
+      },
+      {
+        "id": 29,
+        "question": "Quelle unité d'élite anticipe les crimes dans « Minority Report » ?",
+        "propositions": [
+          "Précrime",
+          "Lost crime",
+          "Ultimate crime",
+          "Last report"
+        ],
+        "réponse": "Précrime",
+        "anecdote": "C'est Tom Cruise, ayant lu la nouvelle de Philip K. Dick durant le tournage d'« Eyes Wide Shut », qui aura l'idée du projet du film."
+      },
+      {
+        "id": 30,
+        "question": "Quel acteur devait initialement porter le costume du « Predator » de 1987 ?",
+        "propositions": [
+          "Samuel L. Jackson",
+          "J-C Vandamme",
+          "Sylvester Stallone",
+          "Dolph Lungdren"
+        ],
+        "réponse": "J-C Vandamme",
+        "anecdote": "Jean-Claude Vandamme sera remplacé en cours de tournage, estimant que pour lui le costume était trop lourd et difficile à porter."
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "provider": "OpenQuizzDB - Fournisseur de contenu libre (https://www.openquizzdb.org)",
+  "editor": "Catherine De Smeytere",
+  "theme": "Fiction pour tous (De la littérature au cinéma)",
+  "difficulty": "2 / 5",
+  "beginner": [
+    {
+      "id": 1,
+      "question": "Quel acteur interprète le héros du film « Independance Day », sorti en 1996 ?",
+      "answers": [
+        "Jeff Goldblum",
+        "Bruce Willis",
+        "Tom Cruise",
+        "Will Smith"
+      ],
+      "correct": 3,
+      "anecdote": "« Independance Day » est ressorti en 2010 en version longue (édition spéciale) avec huit minutes de scènes supplémentaires."
+    },
+    {
+      "id": 2,
+      "question": "Qui a imaginé le scénario de la saga « Star Wars » dans les années 1970 ?",
+      "answers": [
+        "Quentin Tarantino",
+        "James Cameron",
+        "Georges Lucas",
+        "J.J. Abrams"
+      ],
+      "correct": 2,
+      "anecdote": "George Lucas est également le créateur et scénariste de la saga « Indiana Jones », réalisée par son ami Steven Spielberg."
+    }
+  ],
+  "confirmed": [
+    {
+    "id": 11,
+    "question": "Dans quelle série a-t-on découvert Olivia Cooke, présente dans le film « The Signal » ?",
+    "answers": [
+      "Game of Thrones",
+      "Westworld",
+      "Bates Motel",
+      "Vampire Diaries"
+    ],
+    "correct": 2,
+    "anecdote": "En 2018, elle tourne son premier blockbuster pour « Ready Player One », long métrage de science-fiction réalisé par Steven Spielberg."
+    },
+    {
+      "id": 12,
+      "question": "Qui a reçu plusieurs prix pour les costumes du film « Le Cinquième Élément » ?",
+      "answers": [
+        "Pierre Cardin",
+        "Jean-Paul Gaultier",
+        "Coco Chanel",
+        "John Galiano"
+      ],
+      "correct": 1,
+      "anecdote": "L'enfant terrible de la mode est mondialement considéré comme un symbole de la culture française et est devenu une icône."
+    }
+  ],
+  "expert": [
+    {
+      "id": 21,
+      "question": "Quel film de 2005 traite du clonage d'êtres humains dans un but médical ?",
+      "answers": [
+        "The Island",
+        "Clones",
+        "Repo Men",
+        "Westworld"
+      ],
+      "correct": 0,
+      "anecdote": "Les héros découvrent que les choix de la Loterie ne seraient pas dus au hasard car l'Île cache une terrifiante vérité."
+    },
+    {
+      "id": 22,
+      "question": "Que gère L'Union dans le film américano-canadien « Repo Men » ?",
+      "answers": [
+        "Vaisseaux spatiaux",
+        "Clones",
+        "Don d'organes",
+        "Robots"
+      ],
+      "correct": 2,
+      "anecdote": "Les personnes ne s'acquittant pas de leurs lourdes dettes après une greffe d'organes sont confrontées aux repo men, les repreneurs."
+    }
+  ]
+}
