@@ -4,7 +4,7 @@
   overflow: hidden;
   .reviews-nav {
     position: absolute;
-    top: -7px;
+    top: 8px;
     width: 100%;
     .review-nav_prev,
     .review-nav_next {
@@ -56,7 +56,7 @@
   }
   .reviews-pagination {
     position: absolute;
-    top: -10%;
+    top: 65px;
     left: 0;
     right: 0;
     text-align: center;
@@ -75,7 +75,7 @@
         opacity: 0.5;
       }
       &.active {
-        background: #FFFFFF;
+        background: #e1c716;
         opacity: 0.9;
         cursor: default;
       }
@@ -86,15 +86,7 @@
 
 <template>
   <div class="reviews">
-    <header>
-      <div class="rating has-text-centered">
-        <p class="note">{{ note }}<span class="max-note">/{{ maxNote }}</span></p>
-        <p class="total-reviews">{{ totalReviews }}<span>&nbsp;{{ reviewName }}</span></p>
-      </div>
-    </header>
-    <footer>
-      <slot></slot>
-    </footer>
+
     <div class="reviews-nav">
       <button class="review-nav_prev" @click.prevent="prev" title="Précédent"></button>
       <button class="review-nav_next" @click.prevent="next" title="Suivant"></button>
@@ -102,18 +94,27 @@
     <div class="reviews-pagination" v-if="pagination">
       <button v-for="n in reviewsCount" v-bind:key="n" @click="goto(n-1)" :class="{active: n - 1 === index}"></button>
     </div>
+    <header class="panel-heading has-text-centered pb-5">
+      <p class="note">{{ note }}<span class="max-note">/{{ maxNote }}</span></p>
+      <p class="total-reviews">{{ totalReviews }}<span>&nbsp;{{ reviewName }}</span></p>
+    </header>
+    <main class="content">
+      <slot></slot>
+    </main>
+
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Reviews',
   data () {
     return {
       index: 0,
       direction: 'right',
-      pagination: false,
       reviews: [],
+      pagination: this.$attrs.pagination ? this.$attrs.pagination : false,
       note: this.$attrs.note ? this.$attrs.note : 0,
       maxNote: this.$attrs.maxNote ? this.$attrs.maxNote : 5,
       totalReviews: this.$attrs.totalReviews ? this.$attrs.totalReviews : 0,

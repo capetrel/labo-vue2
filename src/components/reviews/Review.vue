@@ -1,12 +1,24 @@
-<style>
+<style lang="scss">
 .review {
   width: 100%;
+  .vue-star-rating {
+    margin: 10px auto 0 auto;
+  }
+  figure:not(:first-child) {
+    margin-top: 1em;
+    blockquote {
+      padding: 0.75em 1em;
+    }
+    figcaption {
+      text-align: right;
+    }
+  }
 }
 
 .review-slide-left-leave-active,
 .review-slide-right-leave-active {
   position: absolute;
-  top: 48px;
+  top: 89px;
   left: 0;
   right: 0;
   bottom: 0;
