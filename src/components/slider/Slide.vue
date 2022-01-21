@@ -12,7 +12,7 @@
 export default {
   name: 'Slide',
   props: {
-    index: { type: Number, defaut: 0 }
+    index: { type: Number, default: 0 }
   },
   data () {
     return {}
