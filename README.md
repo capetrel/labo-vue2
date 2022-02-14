@@ -18,3 +18,4 @@ vuex-multi-tab-state permet d'utiliser le local storage pour partager des donné
 
 ## TODO
 - [ ] Terminer le store pour Todo
+- [ ] Terminer la validation du formulaire pour les temoignages

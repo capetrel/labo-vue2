@@ -84,7 +84,7 @@ export default {
     return {
       reviews: reviewsData,
       testimony: {},
-      showModal: true,
+      showModal: false,
       errors: []
     }
   },
