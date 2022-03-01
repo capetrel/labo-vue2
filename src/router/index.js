@@ -7,6 +7,7 @@ import PageA from '../views/PageA'
 import PageB from '../views/PageB'
 import PageC from '../views/PageC'
 import PageQuizz from '../views/PageQuizz'
+import PageGames from '../views/PageGames'
 import PageTodo from '../views/PageTodo'
 import PageUsers from '../views/PageUsers'
 import PageUser from '../views/PageUser'
@@ -19,6 +20,7 @@ const routes = [
   { path: '/a', components: { default: PageA }, name: 'a', children: [{ path: 'b', component: PageB, name: 'a.b' }, { path: 'c', component: PageC, name: 'a.c' }] },
   { path: '/d', component: resolve => require(['../views/PageD.vue'], resolve), name: 'd' }, // async syste
   { path: '/quizz', components: { default: PageQuizz }, name: 'quizz' },
+  { path: '/games', components: { default: PageGames }, name: 'games' },
   { path: '/todo', components: { default: PageTodo }, name: 'todo' },
   { path: '/users', components: { default: PageUsers, sidebar: Sidebar }, name: 'users' },
   { path: '/user/:id(\\d+)', components: { default: PageUser, sidebar: Sidebar }, name: 'user' },

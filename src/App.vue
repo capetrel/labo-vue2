@@ -27,6 +27,8 @@
 
           <router-link :to="{name: 'quizz'}" class="navbar-item">Quizz</router-link>
 
+          <router-link :to="{name: 'games'}" class="navbar-item">Jeux</router-link>
+
           <router-link :to="{name: 'todo'}" class="navbar-item">Todo</router-link>
 
           <router-link :to="{name: 'users'}" class="navbar-item">Utilisateurs</router-link>
@@ -39,19 +41,6 @@
 
       </div>
     </nav>
-
-    <section class="hero mb-5">
-      <slider>
-        <slide v-for="(slide, s) in slides" :key="s" :index="slide - 1">
-          <div class="slide-title">Image {{ slide }}</div>
-          <img :src="'https://picsum.photos/id/100'+ slide +'/630/300'" alt="image au hasard">
-        </slide>
-      </slider>
-      <div class="buttons columns is-centered">
-        <button @click="addSlide" class="button">Ajout un slide</button>
-        <button @click="removeSlide" class="button">Supprimer un slide</button>
-      </div>
-    </section>
 
     <section class="columns">
 
@@ -66,27 +55,7 @@
 </template>
 
 <script>
-import Slider from './components/slider/Slider'
-import Slide from './components/slider/Slide'
-
 export default {
-  name: 'App',
-  data () {
-    return {
-      slides: 5
-    }
-  },
-  components: {
-    Slider,
-    Slide
-  },
-  methods: {
-    addSlide () {
-      this.slides++
-    },
-    removeSlide () {
-      this.slides--
-    }
-  }
+  name: 'App'
 }
 </script>
