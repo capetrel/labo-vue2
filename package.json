@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve --skip-plugins @vue/cli-plugin-eslint",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build --skip-plugins @vue/cli-plugin-eslint",
+    "lint": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gsap": "^3.9.1",
     "velocity-animate": "^2.0.6",
     "vue": "^2.6.11",
     "vue-resource": "^1.5.3",
     "vue-router": "^3.2.0",
     "vue-star-rating": "^1.7.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "vuex-multi-tab-state": "^1.0.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

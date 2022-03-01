@@ -56,9 +56,6 @@
 
           </form>
         </div>
-          <form @submit="checkForm">
-
-          </form>
         <div slot="footer">
           <button class="button" @click="$emit('close')">Annuler</button>
         </div>
@@ -84,7 +81,7 @@ export default {
     return {
       reviews: reviewsData,
       testimony: {},
-      showModal: true,
+      showModal: false,
       errors: []
     }
   },
